@@ -1,7 +1,8 @@
 # gen-uboot-env-image
 a tool to generate a U-Boot environment binary image
 
-## commands
+
+## generate commands
 
 	$ vi env.text
 
@@ -17,4 +18,10 @@ a tool to generate a U-Boot environment binary image
 
 	$ hexdump -C config.bin
 
+
+## verify commands
+
+	# mtd erase Config
+
+	# mtd write config.bin1 Config
 
