@@ -1,0 +1,20 @@
+bootcmd=tftp
+bootdelay=3
+baudrate=57600
+ethaddr="00:AA:BB:CC:DD:10"
+ipaddr=192.168.70.100
+serverip=192.168.70.1
+bootloader_ver=1.0.12
+console=ttyS1,57600n8
+root=/dev/mtdblock5
+rootfstype=squashfs,jffs2
+running_fw=firmware1
+gtkargs=setenv bootargs console=${console} root=${root} ${optargs} rootfstype=${rootfstype} running_fw=${running_fw}
+factoryreset=0
+skipfwcheck=0
+lora_reset=0
+autostart=no
+1stfwcrc32=a42d8ba1
+1stfwlen=10485772
+2ndfwcrc32=a42d8ba1
+2ndfwlen=10485772
